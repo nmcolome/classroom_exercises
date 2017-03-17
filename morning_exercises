@@ -1,0 +1,13 @@
+#Sum of squares and square of a Sum
+
+collection = []
+
+11.times do |number| 
+    collection.push(number**2)
+end
+
+collection.each do |square| 
+    collection.push.(square [0..11]+ square [1..11])
+end
+
+puts collection
